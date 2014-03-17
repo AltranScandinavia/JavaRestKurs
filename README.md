@@ -10,7 +10,8 @@ http://www.oracle.com/technetwork/java/javase/downloads
 http://maven.apache.org/download.cgi  
   
 **Koden**  
-https://github.com/thomaspringle/RestKurs
+* https://github.com/AltranScandinavia/JavaRestKurs  
+* https://github.com/AltranScandinavia/JavaRestKursFacit  
   
 **Installera**  
 Ladda ner dependencies genom att skriva ```mvn clean install -U``` i projekt-roten.
