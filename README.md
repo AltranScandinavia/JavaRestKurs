@@ -32,7 +32,7 @@ Ett anti-corruption-layer i form av en MovieBean används för att inte blotta d
 
 **Mer info**  
 Här finns mer dokumentation om koden:  
-https://github.com/thomaspringle/RestKurs/blob/master/SRC_INFO.md
+https://github.com/AltranScandinavia/JavaRestKurs/blob/master/SRC_INFO.md
   
   
 ###HTTP-metoder  
