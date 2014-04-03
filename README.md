@@ -50,7 +50,7 @@ Vad gäller t.ex. vid DELETE, vad skall returneras?
 **Arbetsgång:**  
 Skapa först upp test på resursen som skall implementeras. Verifiera att testet falerar. Gör implementationen. Verifiera att testet går igenom.	
   
-* Utgå ifrån ```ActorResourceTestTemplate.java```. 
+* Utgå ifrån ```ActorResourceGetNotEmptyTest.java``` och ```ActorResourceGetSpecificTest.java```. 
 * Försök att skapa upp test-metod och resurs på egen hand. 
 * Både ```GET /actors``` och ```GET /actors/{actorId}```
 * Snegla på befintliga enhetstest och implementation av MovieResource om du fastnar. 
@@ -66,7 +66,8 @@ Skapa upp POST-metoden i Actor-resursen för att lägga till en Actor.
   
 **Arbetsgång:**  
 Skapa först upp test på resursen som skall implementeras. Verifiera att testet falerar. Gör implementationen. Verifiera att testet går igenom.	
-  
+
+* Utgå ifrån ```ActorResourcePostTest.java```.   
 * Använd ```private String getActorJsonFromFile()``` för att läsa in filen ```actor.json``` och POST:a datan.
 * POST sker mot ```/actors``` - inte mot ```/actors/{id}``` - servern skapar upp ett id.
 * Testa att rätt statuskod returneras när allt går bra: ```201 - Created```.
