@@ -54,14 +54,14 @@ public class ActorResource {
 	}
 
 	// Implement "POST /actors" here 
-	public Response addMovie() {
+	public Response addActor() {
 		// String id = actorService.createActor(actorBean);
 		
 		return null;
 	}
 	
 	// Implement "DELETE /actors" here
-	public Response deleteMovies() {
+	public Response deleteActors() {
 		// List<Actor> actors = actorService.deleteActors(userToken);
 		// List<ActorBean> actorBeans = ActorBeanHelper.asActorBeans(actors);
 		return null;
