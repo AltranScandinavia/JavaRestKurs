@@ -114,7 +114,12 @@ Lägg till test för paginering. Verifiera att testet falerar. Gör implementati
 Lägg till test för länkar. Verifiera att testet falerar. Gör implementationen. Verifiera att testet går igenom.
 
 1. Använd ```ActorResourceGetMovieLinksTest.java``` som mockar upp ```actorService.getActor(uuid)``` och returnerar fyra film-idn.
-2. Skapa upp en ```List<MovieLinkBean>``` som du returnerar.
+2. Skapa upp en ```List<MovieLinkBean>``` som du returnerar. 
+3. Film-idn kan fås genom att plocka ut dem från ActorBean:
+```java 
+  ActorBean actorBean = actor.asActorBean();
+  List<String> movieIds = actorBean.getMovies();
+```
 
 **Hjälp om du fastnar:**  
 - Bygg upp en URI till filmresursen genom att injecta ```@Context UriInfo uriInfo``` som en parameter. Länken till filmresursen kan sedan byggas upp genom ```uriInfo.getBaseUriBuilder().path(MovieResource.class).path(movieId)```
